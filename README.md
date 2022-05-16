@@ -21,4 +21,4 @@ My implement
     * ```LockUtil.java```：实现了锁管理的最顶层。协调调用中间层和最底层锁管理方法，从而实现所需锁功能。
     * 注意：两阶段加锁主要体现在项目整体，如Page.PageBuffer的get和put方法等。
 * recovery：recovery包主要采用Aries算法实现数据库的故障恢复。
-   *  ```ARIESRecoveryManager```：包含forward process的savepoints、checkpoins、transaction status、log功能，以及故障恢复时的Analysis阶段、Redo阶段和Undo阶段的实现。
+   *  ```ARIESRecoveryManager.java```：包含forward process的savepoints、checkpoins、transaction status、log功能，以及故障恢复时的Analysis阶段、Redo阶段和Undo阶段的实现。
